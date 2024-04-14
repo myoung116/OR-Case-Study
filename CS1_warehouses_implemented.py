@@ -3,13 +3,13 @@ from gurobipy import GRB
 import pandas as pd
 
 ### Importing Data--------------------------------------------------------------------------
-df_plants = pd.read_excel('/Users/michaelyoung/Documents/Decision Spot/Case Study 1/CS1.xlsx', sheet_name='Plants')
-df_custs = pd.read_excel('/Users/michaelyoung/Documents/Decision Spot/Case Study 1/CS1.xlsx', sheet_name='Customers')
-df_prods = pd.read_excel('/Users/michaelyoung/Documents/Decision Spot/Case Study 1/CS1.xlsx', sheet_name='Product')
-df_demands = pd.read_excel('/Users/michaelyoung/Documents/Decision Spot/Case Study 1/CS1.xlsx', sheet_name='Demand')
-df_caps = pd.read_excel('/Users/michaelyoung/Documents/Decision Spot/Case Study 1/CS1.xlsx', sheet_name='Production Capacity')
-df_dists = pd.read_excel('/Users/michaelyoung/Documents/Decision Spot/Case Study 1/CS1.xlsx', sheet_name='Distances')
-df_changes = pd.read_excel('/Users/michaelyoung/Documents/Decision Spot/Case Study 1/CS1.xlsx', sheet_name='Setups')
+df_plants = pd.read_excel(FilePath)
+df_custs = pd.read_excel(FilePath)
+df_prods = pd.read_excel(FilePath)
+df_demands = pd.read_excel(FilePath)
+df_caps = pd.read_excel(FilePath)
+df_dists = pd.read_excel(FilePath)
+df_changes = pd.read_excel(FilePath)
 df_pc_dists = df_dists.iloc[:, [0,1,2]]
 df_cc_dists = df_dists.iloc[:, [4,5,6]]
 
